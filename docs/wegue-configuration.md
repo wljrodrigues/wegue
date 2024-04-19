@@ -419,7 +419,7 @@ Example configurations can be found in the `app-starter/static` directory. Below
     "dark": false
   },
 
-  "logo": "https://dummyimage.com/100x100/aaa/fff&text=Wegue",
+  "logo": "https://dummyimage.com/100x100/aaa/fff&text=Geo",
   "logoWidth": "100",
   "logoHeight": "100",
 

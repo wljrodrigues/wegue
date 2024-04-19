@@ -1,12 +1,16 @@
 {
 
-  "colorTheme": {
-    "dark": false
+  "colorTheme": {    
+    "themes": {
+        "light": {
+        "primary": "#BFDDDF"
+      }
+    }
   },
 
-  "logo": "https://dummyimage.com/100x100/aaa/fff&text=Wegue",
-  "logoWidth": "100",
-  "logoHeight": "100",
+  "logo": "https://dummyimage.com/100x100/aaa/fff&text=Geo",
+  "logoWidth": "80",
+  "logoHeight": "80",
 
   "showCopyrightYear": true,
 
@@ -51,7 +55,14 @@
   },
 
   "mapLayers": [
-
+    {
+      "type": "WMS",
+      "name": "0100_ce_comunidades_entorno_2022_pto",
+      "url": "https://pedea.sema.ce.gov.br/geoserver/inde/wms?SERVICE=WMS&",
+      "lid": "0100_ce_comunidades_entorno_2022_pto",
+      "layers": "0100_ce_comunidades_entorno_2022_pto"
+    },
+    
     {
       "type": "VECTOR",
       "lid": "Shops",
@@ -76,6 +87,8 @@
           "offsetY": 15,
           "align": "center"
         }
+
+        
       },
       "columnMapping": {
         "name": "Name",
@@ -111,11 +124,7 @@
       "columnMapping": {
         "name": "Name"
       },
-      "selectStyle": {
-        "textIcon": "star",
-        "font": "normal 30px Material Icons",
-        "fillColor": "black"
-      },
+      
       "doAppendSelectStyle": false
     },
 
@@ -248,7 +257,7 @@
       "debug": false,
       "provider": "osm",
       "providerOptions": {
-        "lang": "en-US",
+        "lang": "pt-BR",
         "countrycodes": "",
         "limit": 6
       }
@@ -256,24 +265,13 @@
     "wgu-zoomtomaxextent": {
       "target": "toolbar"
     },
-    "wgu-maprecorder": {
-      "target": "toolbar",
-      "win": "floating",
-      "icon": "mdi-video",
-      "draggable": false,
-      "initPos": {
-        "left": 8,
-        "top": 230
-      }
-    },
+  
     "wgu-helpwin": {
       "target": "toolbar",
       "win": "floating",
       "icon": "help"
     },
-    "wgu-geolocator": {
-      "target": "toolbar"
-    },
+    
     "wgu-themeswitcher": {
       "target": "toolbar",
       "icon": "dark_mode"
@@ -286,12 +284,7 @@
     },
     "wgu-localeswitcher": {
       "target": "toolbar"
-    },
-    "sample-module": {
-      "target": "toolbar",
-      "win": "floating",
-      "icon": "star",
-      "closable": false
     }
+    
   }
 }
